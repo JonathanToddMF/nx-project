@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/nxng",
         "index": "apps/nxng/src/index.html",
@@ -13,8 +15,15 @@
         "polyfills": "apps/nxng/src/polyfills.ts",
         "tsConfig": "apps/nxng/tsconfig.app.json",
         "inlineStyleLanguage": "less",
-        "assets": ["apps/nxng/src/favicon.ico", "apps/nxng/src/assets"],
-        "styles": ["apps/nxng/src/styles.less"],
+        "assets": [
+          "apps/nxng/src/favicon.ico",
+          "apps/nxng/src/assets"
+        ],
+        "styles": [
+          "apps/nxng/src/styles.less",
+          "./node_modules/@ux-aspects-themes/micro-focus/index.css",
+          "./node_modules/@fontsource/roboto/latin.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -71,12 +80,17 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/nxng/**/*.ts", "apps/nxng/**/*.html"]
+        "lintFilePatterns": [
+          "apps/nxng/**/*.ts",
+          "apps/nxng/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/nxng"],
+      "outputs": [
+        "coverage/apps/nxng"
+      ],
       "options": {
         "jestConfig": "apps/nxng/jest.config.ts",
         "passWithNoTests": true

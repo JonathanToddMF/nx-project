@@ -12,6 +12,8 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~14.0.0",
+    "@angular/cdk": "^14.0.0",
+    "@angular/cdk-experimental": "^14.0.0",
     "@angular/common": "~14.0.0",
     "@angular/compiler": "~14.0.0",
     "@angular/core": "~14.0.0",
@@ -20,6 +22,8 @@
     "@angular/platform-browser-dynamic": "~14.0.0",
     "@angular/router": "~14.0.0",
     "@nrwl/angular": "14.4.2",
+    "@ux-aspects-angular/universal": "^2.0.0",
+    "luxon": "^2.3.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
@@ -32,6 +36,7 @@
     "@angular/cli": "~14.0.0",
     "@angular/compiler-cli": "~14.0.0",
     "@angular/language-service": "~14.0.0",
+    "@fontsource/roboto": "^4.2.0",
     "@nrwl/cli": "14.4.2",
     "@nrwl/cypress": "14.4.2",
     "@nrwl/eslint-plugin-nx": "14.4.2",
@@ -39,6 +44,7 @@
     "@nrwl/linter": "14.4.2",
     "@nrwl/workspace": "14.4.2",
     "@types/jest": "27.4.1",
+    "@types/luxon": "^2.0.0",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
